@@ -7,7 +7,7 @@
     let history: Array<History> = $historyStore
 </script>
 
-<div id="chat-history">F
+<div id="chat-history">
     {#each history as h}
         {#if h.author === "Bot"}
             <CharMessage message={h.message} author="AI Assistant" profileUrl="/llama2.jpg"/>
